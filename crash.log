@@ -1,0 +1,140 @@
+
+[2026-09-04 17:14:36] EXCEÇÃO NÃO TRATADA:
+Traceback (most recent call last):
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 78, in <module>
+    test_ui_and_telemetry()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 55, in test_ui_and_telemetry
+    assert 'Sim (Saturado!)' in win.card_telemetria.lbl_val_sat.text()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+[2026-09-04 19:08:52] EXCEÇÃO NÃO TRATADA:
+Traceback (most recent call last):
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 101, in <module>
+    test_ui_and_telemetry()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 92, in test_ui_and_telemetry
+    win.process_raw_spectral_data([0.90, 0.90, 0.90, 0.90, 0.90, 0.90])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\main.py", line 4480, in process_raw_spectral_data
+    f"Análise Concluída: Kappa={kappa_val:.2f} ({kappa_status}) | Modo: {self.chem_engine.active_mode.upper()} | Celulose(R680/730)={ratio_cel:.2f}"
+                                ^^^^^^^^^
+NameError: name 'kappa_val' is not defined
+
+
+[2026-09-04 19:09:13] EXCEÇÃO NÃO TRATADA:
+Traceback (most recent call last):
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 101, in <module>
+    test_ui_and_telemetry()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 93, in test_ui_and_telemetry
+    assert float(win.lbl_kappa_valor.text()) <= 2.0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+[2026-09-04 19:38:13] EXCEÇÃO NÃO TRATADA:
+Traceback (most recent call last):
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 102, in <module>
+    test_ui_and_telemetry()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\tests\test_ui_and_telemetry.py", line 54, in test_ui_and_telemetry
+    assert '29.2' in win.card_telemetria.lbl_val_temp.text()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+[2026-10-09 17:47:04] EXCEÇÃO NÃO TRATADA:
+Traceback (most recent call last):
+  File "C:\Python314\Lib\shutil.py", line 707, in _rmtree_unsafe
+    os.rmdir(path)
+    ~~~~~~~~^^^^^^
+PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\mateu\\AppData\\Local\\Packages\\sandbox.{58cf051c-4958-4ca6-a904-59e35558979b}\\AC\\Temp\\tmpeloj9wlo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python314\Lib\weakref.py", line 566, in _exitfunc
+    f()
+    ~^^
+  File "C:\Python314\Lib\weakref.py", line 490, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 960, in _cleanup
+    cls._rmtree(name, ignore_errors=ignore_errors)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 955, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 852, in rmtree
+    _rmtree_impl(path, dir_fd, onexc)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 711, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 927, in onexc
+    _resetperms(path)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 283, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 272, in _dont_follow_symlinks
+    func(path, *args, follow_symlinks=False)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\mateu\\AppData\\Local\\Packages\\sandbox.{58cf051c-4958-4ca6-a904-59e35558979b}\\AC\\Temp\\tmpeloj9wlo'
+
+
+[2026-10-14 17:44:09] EXCEÇÃO NÃO TRATADA:
+Traceback (most recent call last):
+  File "C:\Python314\Lib\shutil.py", line 707, in _rmtree_unsafe
+    os.rmdir(path)
+    ~~~~~~~~^^^^^^
+PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\mateu\\AppData\\Local\\Packages\\sandbox.{e49fd467-5e41-4c6d-ae25-82c970184885}\\AC\\Temp\\tmpbe5zpvm_'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python314\Lib\weakref.py", line 566, in _exitfunc
+    f()
+    ~^^
+  File "C:\Python314\Lib\weakref.py", line 490, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 960, in _cleanup
+    cls._rmtree(name, ignore_errors=ignore_errors)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 955, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 852, in rmtree
+    _rmtree_impl(path, dir_fd, onexc)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\shutil.py", line 711, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 927, in onexc
+    _resetperms(path)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 283, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\tempfile.py", line 272, in _dont_follow_symlinks
+    func(path, *args, follow_symlinks=False)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Acesso negado: 'C:\\Users\\mateu\\AppData\\Local\\Packages\\sandbox.{e49fd467-5e41-4c6d-ae25-82c970184885}\\AC\\Temp\\tmpbe5zpvm_'
+
+
+[2026-10-14 17:48:33] EXCEÇÃO NÃO TRATADA:
+Traceback (most recent call last):
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\validation\preview_door.py", line 40, in <module>
+    dlg = ManualControlDialog(w)
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\manual_control_dialog.py", line 76, in __init__
+    self.update_interlocks_and_leds()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mateu\.gemini\antigravity-ide\scratch\spectrum_lab\manual_control_dialog.py", line 304, in update_interlocks_and_leds
+    self.lbl_housing.setText(self.main_win.lbl_housing_state.text())
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: wrapped C/C++ object of type QLabel has been deleted
+

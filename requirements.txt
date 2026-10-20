@@ -1,0 +1,6 @@
+PyQt5==5.15.11
+numpy==2.5.2
+matplotlib==3.11.1
+pyserial==3.5
+reportlab==5.0.1
+PyInstaller==6.21.0
