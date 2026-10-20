@@ -1,0 +1,29 @@
+{
+  "is_calibrated": true,
+  "timestamp": "2026-09-01 19:50:00",
+  "notes": "Calibração de Referência: Lâmina + Lamínula com Água Destilada Pura",
+  "vetor_branco": [
+    1250.0,
+    1480.0,
+    1820.0,
+    2150.0,
+    1950.0,
+    1620.0
+  ],
+  "vetor_escuro": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "canais_nm": [
+    610,
+    680,
+    730,
+    760,
+    810,
+    860
+  ]
+}
